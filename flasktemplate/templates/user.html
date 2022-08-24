@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <!--to include static content in static folder-->
+        <link rel="stylesheet" href="{{url_for('static',filename='styles/styles.css')}}">
+    </head>
+    <body>
+        <h1>Hello {{username}}</h1>
+        <h1>How are you doing {{username}}?</h1>
+        <!--python code in html-->
+        <h3>Multiplication table of {{n}}</h3>
+        {%for i in range (1,11): %}
+            <h3>{{n}} x {{i}} = {{n*i}}</h3>
+            {% endfor %}
+    </body>
+</html>
