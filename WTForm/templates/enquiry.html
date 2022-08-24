@@ -1,5 +1,8 @@
 <html>
     <body>
+        <div>
+            <h1>Hi {% if name %}{{ name }}{% else %}Guest{% endif %}!</h1>
+        </div>
         <form method="POST">
             {{ form.hidden_tag() }}<!--shld be there for every form-->
             {{ form.name.label }} {{ form.name() }}

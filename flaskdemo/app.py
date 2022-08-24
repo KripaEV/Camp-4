@@ -141,6 +141,7 @@ def gender(name):
     return_text="Your name "+response["name"]+" is "+response["gender"]
     return return_text 
 
+#supposed to be at the end of pgm everytime
 #check if its the main module, then run the app
 if __name__=="__main__":
     app.run(host="0.0.0.0",debug=True)
